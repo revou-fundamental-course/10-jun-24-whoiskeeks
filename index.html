@@ -4,16 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>whoiskeeks kalkulator konversi suhu</title>
+    <title>Temperature Converter whoiskeeks</title>
+    <!-- CSS Link -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <header>
-        <h1>Kalkulator Konversi Suhu</h1>
-    </header>
+        <center><main>Temperature Calculator</main>
+        
+        <!-- Main content -->
+            <!--Data Input Description-->
+            <header>
+                <label for="converter"> Conversion of <span class="C">°C</span> to <span class="F">°F</span></label>
+            </header>
+
+            <!--Temperature Input-->
+            <section>
+                <input type="text" id="converter" placeholder="°C">
+            </section>
+
+            <!--Result-->
+            <p class="result"></p>
+                
+            <!--Buttons-->
+            <section id="buttons">
+                <button class="convertButton">Convert</button>
+                <button class="resetButton">Reset</button>
+                <button class="changeButton">Change</button>
+            </section>
+
+        <hr/>   
+            
+            <!--Section Formula Description-->
+            <section>
+                <header class="description">
+                    <main>Conversion Formula :</main>
+                </header>
+
+                <p>
+                    <span class="subject">T</span><sub>(°F)</sub> = (<span class="subject">T</span><sub>(°C)</sub> + 32) x 9/5
+                </p>
     
+                <p>or</p>
+    
+                <p>
+                    <span class="subject">T</span><sub>(°C)</sub> = (<span class="subject">T</span><sub>(°F)</sub> - 32) x 5/9
+                </p>
+            </section>
+        </center> 
+
+     <!-- Javascript Link -->
     <script src="js/script.js"></script>
 </body>
-    
+
 </html>
